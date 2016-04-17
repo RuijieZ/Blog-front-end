@@ -55,8 +55,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a {
+    text-decoration: none;
+    color:#333;
+}
+
+h2 {
+  font-size: 25px;  
+}
+
+ul,ol {
+    margin:0;
+    padding:0;
+}
+
 header {
     background-color: gray;
+}
+
+#main-header {
+    overflow:hidden;
+    height: 80px;
+    background: #333;
+    margin-bottom: 20px;
+}
+
+#main-header h1 {
+    padding: 0;
+    color: #fff;
 }
 
 #logo {
@@ -64,8 +90,9 @@ header {
 }
 
 .container {
-    width: 70%;
-    margin: 15px 8% 15px 8%;
+    width: 80%;
+    margin: 0px auto;
+    overflow:hidden;
 }
 
 #branding {
@@ -94,12 +121,10 @@ header {
 }
 
 .content {
-    float: left;
-    margin-left: 8%;
+    width: 70%;
     border: 1px solid;
     border-radius: 15px;
     border-color: darkgray;
-    width:50%;
     padding: 10px;
 }
 
@@ -117,9 +142,19 @@ header {
 #sidebar {
     margin-right:13%;
 }
-   
-.blog-content {
 
+#main-footer {
+    background-color: gray;
+}
+
+#main-footer p{
+    float:left;
+    margin-right: 55px;
+}
+
+#main-footer ul {
+    float:left;
+    width: 18%;
 }
 
 
