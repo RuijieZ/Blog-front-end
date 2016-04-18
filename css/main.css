@@ -55,6 +55,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*
+ *  general setting for links, h2, ul, ol
+ */
 a {
     text-decoration: none;
     color:#333;
@@ -69,58 +73,82 @@ ul,ol {
     padding:0;
 }
 
+/* 
+ *  header styles, including logo, container class, branding
+ */
 header {
     background-color: gray;
 }
 
 #main-header {
     overflow:hidden;
-    height: 80px;
+    height: 50px;
     background: #333;
     margin-bottom: 20px;
 }
 
-#main-header h1 {
-    padding: 0;
-    color: #fff;
-}
-
-#logo {
-    font-size: 20%;
-}
-
 .container {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
     overflow:hidden;
 }
 
 #branding {
     float: left;
+    width: 50%;
 }
 
 #branding h1 {
-    float:right;
-    margin-left: 15px;
+    padding: 5px 0 0 70px;
+    color: #fff;
+    margin: 0 !important;   /*Overides the frameworks default style*/
 }
 
+#logo {
+    width: 60px;
+    height: auto;
+    position: absolute;
+}
+
+/*
+ *  main navigation
+ */
+
+#main-nav {
+    float: right;
+    width: 50%;
+}
 
 #main-nav ul {
-    margin-left: 70%;
-    list-style: none;
+    float: right;
+    padding-top: 12px;
 }
 
-#main-mav li {      /* how to make the link style to be none */
-    font-style: none;
-    display: inline-block;
+#main-nav li {      /* how to make the link style to be none */
+    color: #fff;
+    float:left;
+    margin: 0 35px;
+    padding:3px 5px 0 5px;
+    font-weight:bold;
+    list-style: square;
+    font-size: 15px;
 }
 
+#main-nav a {
+    color: #fff;
+}
+
+
+/*
+ *  the side bar, and the main content
+ */ 
 #sidebar {
     margin-top: 30px;
     float: right;
+    margin-right:13%;
 }
 
-.content {
+.main-content {
     width: 70%;
     border: 1px solid;
     border-radius: 15px;
@@ -139,9 +167,9 @@ header {
     background-color: darkgray;
 }
 
-#sidebar {
-    margin-right:13%;
-}
+/*
+ * footer
+ */
 
 #main-footer {
     background-color: gray;
