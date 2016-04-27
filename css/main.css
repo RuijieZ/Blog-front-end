@@ -2,7 +2,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 13px;
     line-height: 1.4;
 }
 
@@ -76,9 +76,7 @@ ul,ol {
 /* 
  *  header styles, including logo, container class, branding
  */
-header {
-    background-color: gray;
-}
+
 
 #main-header {
     overflow:hidden;
@@ -139,40 +137,189 @@ header {
 }
 
 
+
 /*
- *  the side bar, and the main content
+ *  the side bar, and the main content, article
  */ 
 #sidebar {
-    margin-top: 30px;
     float: right;
-    margin-right:13%;
+    width: 30%;
 }
 
 .main-content {
-    width: 70%;
-    border: 1px solid;
-    border-radius: 15px;
-    border-color: darkgray;
+    width: 63%;
+    border: 1px solid #ccc;      /*#ccc is light gray*/
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+    float: left;
+}
+
+.main-content img {
+    width: 100%;
+}
+
+article {
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0 20px 0;
+}
+
+article h2 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.meta {
+    margin:10px 0 10px 0;
+	padding:5px;
+    background: #333;
+    color: #fff;
+    height:20px;
+}
+
+.meta p {
+    padding: 0;
+    margin: 0;
+}
+
+.meta span{
+	float:right;
+}
+
+
+.readmore {
+    width:97%;
+    background: #f4f4f4;
+    color:#000;
+    display: block;
+    text-align: center;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:10px;
 }
 
-#author-info {
+.readmore:hover {
+    background: #ccc;
+}
+
+.search-form {
     float:left;
-     background-color: darkgray;
-
 }
 
-#comment-info {
+.search-form input[type="search"] {
+    height: 20px;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    width: 85%;
+    padding: 3px;
+    float: left;
+}
+
+.search-form input[type="image"] {
+    width: 10%;
     float:right;
-    background-color: darkgray;
 }
 
+#subnav {
+    padding: 20px 0 20px 0;
+}
+#subnav ul {
+    list-style: none;
+}
+
+#subnav li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px dotted #333
+}
+
+#subnav a {
+    color: #333;
+}
+
+#subnav a:hover {
+    color: #ff0000;
+}
+
+#adimg {
+    width: 100%;
+    height: auto;
+}
+
+.article-footer {
+    margin-top: 20px;
+}
+
+
+.comment-left {
+    float: left;
+    width: 8%;
+}
+
+.comment-right {
+    float: right;
+    width: 90%;
+}
+
+.comment-form {
+    margin-top: 20px;
+    padding: 5px 20px 10px 20px;
+    background: #333;
+    color: #fff;
+}
+
+.comment-form input[type="text"], .comment-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    width: 97%;
+    color: #333;
+}
+
+.comment-form textarea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 97%;
+    color:#333;
+    height: 100px;
+}
+
+button {
+    color: #333;
+}
+
+.add-post-form {
+    background: #333;
+    color: #fff;
+    padding: 5px 20px 10px 20px;
+}
+
+.add-post-form input, .add-post-form textarea {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 97%;
+    color: #333;
+    margin-top: 10px;
+} 
+
+.add-post-form textarea {
+    height: 100px;
+}
+
+#upload-button {
+    margin-right: 10px;
+}
 /*
  * footer
  */
 
 #main-footer {
-    background-color: gray;
+    background: #333;
+    color: #ccc;
+    min-height: 180px;
+    margin-top: 30px;
+    overflow: auto;
 }
 
 #main-footer p{
@@ -181,10 +328,27 @@ header {
 }
 
 #main-footer ul {
+    margin-top: 10px;
     float:left;
-    width: 18%;
+    width: 25%;
+    list-style: none;
+    margin-bottom:15px;
 }
 
+#main-footer li {
+    font-size: 15px;
+    padding: 4px 2px 4px 2px;
+    border-bottom: 1px dotted #ccc;
+    margin-right: 10px;
+}
+
+#main-footer a {
+    color:#fff;
+}
+
+#main-footer a:hover {
+    color: #ff0000;
+}
 
 /* ==========================================================================
    Media Queries
