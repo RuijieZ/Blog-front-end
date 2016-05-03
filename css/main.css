@@ -288,6 +288,8 @@ button {
     color: #333;
 }
 
+/* Add post page */
+
 .add-post-form {
     background: #333;
     color: #fff;
@@ -304,11 +306,19 @@ button {
 } 
 
 .add-post-form textarea {
-    height: 100px;
+    height: 300px;
 }
 
 #upload-button {
     margin-right: 10px;
+}
+
+.add-post-form select {
+    height: 30px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    width: 98%;
+    color: black;
 }
 /*
  * footer
